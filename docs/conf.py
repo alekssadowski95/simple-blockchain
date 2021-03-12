@@ -48,7 +48,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 #
 html_theme = 'furo'
 html_logo = 'blockchain.png'
-pygments_style = "sphinx"
+pygments_style = "monokai"
 pygments_dark_style = "monokai"
 
 # Add any paths that contain custom static files (such as style sheets) here,
