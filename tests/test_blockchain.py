@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from context import sample
-from sample.blockchain import Transaction, Block, Blockchain
+from context import blockchain
+from blockchain.blockchain import Transaction, Block, Blockchain
 
 import unittest
 
