@@ -1,17 +1,16 @@
-Simplified Blockchain - Documentation
-=================================================
+Simplified Blockchain
+=====================
+This simplified model of a blockchain was created to help students understand the blockchain technology, which is also the technology behind the well known crypto-currency Bitcoin.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
 
-.. automodule:: sample.blockchain
-    :members:
+   quickstart
+   reference
+   license
 
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
