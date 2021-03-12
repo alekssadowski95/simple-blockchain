@@ -41,7 +41,7 @@ class Block():
   """This is a conceptual class representation of a blockchain block
  
   :param transactions: List of transactions in this block
-  :type transactions: :class:`Transaction`[]
+  :type transactions: list
   """
   def __init__(self, previous_hash, transactions):
     """Constructor method
@@ -52,9 +52,8 @@ class Block():
     self.hash = hashlib.sha256(self.transactions_hash().encode('utf-8') + previous_hash.encode('utf-8'))
 
   def transactions_hash(self):
-    ''' Converts a list of transactions to string. This method should only be called by the constructor method
-    :param transactions: List of transactions to be converted to string
-    :type transactions: :class:`Transaction`[]
+    ''' Converts the list of this blocks transactions to string. This method should only be called by the constructor method
+
     :return: String from a list of Transaction objects
     :rtype: str
     '''
@@ -73,7 +72,10 @@ class Block():
  
   def display_with_index(self, block_index):
     ''' Prints this block including its index in the blockchain to the console. 
-    This method should only be called by the parent blockchain of this block
+    This method should only be called by the parent blockchain of this block.
+
+    :param: Index of the block to be displayed
+    :type: int
     '''
     if (block_index == 0):
       print(f'--- Genesis block ---')
@@ -100,7 +102,7 @@ class Blockchain():
     ''' Creates and adds a block from given transactions to this blockchain
  
     :param transactions: The transactions to be added as a block to this blockchain
-    :type transactions: :class:`Transaction`[]
+    :type transactions: list
     '''
     self.blocks.append(Block(self.blocks[-1].hash.hexdigest(),transactions))
  
