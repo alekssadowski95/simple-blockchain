@@ -1,6 +1,10 @@
 # Simplified Blockchain
 
 This simplified model of a blockchain was created to help students understand the blockchain technology, which is also the technology behind the well known crypto-currency Bitcoin.
+Download with:
+'''
+pip install simple-blockchain
+'''
 
 ## How to use
 Create your own blockchain in 3 easy steps.
