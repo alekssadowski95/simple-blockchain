@@ -49,9 +49,9 @@ class Block():
     self.transactions = []
     for transaction in transactions:
       self.transactions.append(transaction)
-    self.hash = hashlib.sha256(self.transactions_hash(self.transactions).encode('utf-8') + previous_hash.encode('utf-8'))
+    self.hash = hashlib.sha256(self.transactions_hash().encode('utf-8') + previous_hash.encode('utf-8'))
 
-  def transactions_hash(self, transactions):
+  def transactions_hash(self):
     ''' Converts a list of transactions to string. This method should only be called by the constructor method
     :param transactions: List of transactions to be converted to string
     :type transactions: :class:`Transaction`[]
@@ -59,7 +59,7 @@ class Block():
     :rtype: str
     '''
     hash_str = ''
-    for transaction in transactions:
+    for transaction in self.transactions:
       hash_str += str(transaction)
     return hash_str
  
@@ -94,7 +94,7 @@ class Blockchain():
     """Constructor method
     """
     self.blocks = []
-    self.blocks.append(Block('',transactions))
+    self.blocks.append(Block('', transactions))
   
   def add_transactions(self, transactions):
     ''' Creates and adds a block from given transactions to this blockchain
