@@ -25,3 +25,6 @@ blockchain.add_transactions([transaction_1, transaction_2, transaction_3])
 ```python
 blockchain.display()
 ```
+
+## Documentation
+http://simple-blockchain.alsado.de
