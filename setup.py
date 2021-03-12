@@ -1,24 +1,22 @@
 # -*- coding: utf-8 -*-
 
-# Learn more: https://github.com/kennethreitz/setup.py
-
 from setuptools import setup, find_packages
 
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='simple-blockchain',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='This is a simplified model of a blockchain, which is also the technology behind the well known crypto-currency Bitcoin.',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Aleksander Sadowski',
+    author_email='aleksander.sadowski@alsado.de',
+    url='https://github.com/alekssadowski95/simple-blockchain',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
