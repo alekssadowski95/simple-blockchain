@@ -4,9 +4,6 @@ This simplified model of a blockchain was created to help students understand th
 
 ## How to use
 Create your own blockchain in 3 easy steps.
-1. Create blockchain
-2. Add transactions
-3. Display blockchain
 
 ### 1. Create blockchain
 ```python
