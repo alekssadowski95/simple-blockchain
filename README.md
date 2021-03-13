@@ -12,6 +12,7 @@ Create your own blockchain in 3 easy steps.
 
 ### 1. Create blockchain
 ```python
+from sample.blockchain import Blockchain
 blockchain = Blockchain()
 ```
 ### 2. Add transactions
