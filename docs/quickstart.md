@@ -4,8 +4,13 @@ This simplified model of a blockchain was created to help students understand th
 
 To run this code you need to have a python interpreter installed: <https://www.python.org/downloads/>
 
+```text
+pip install simple-blockchain
+```
+
 ## 1. Create blockchain
 ```python
+from sample.blockchain import Blockchain
 blockchain = Blockchain()
 ```
 ## 2. Add transactions
