@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from context import blockchain
+from .context import sample
 from sample.blockchain import Transaction, Block, Blockchain
 
 import unittest
@@ -67,5 +67,3 @@ class TestBlockchain(unittest.TestCase):
         self.assertEqual(self.blockchain.blocks[2].transactions[0].receiver, 'Aleksander Sadowski')
         self.assertEqual(self.blockchain.blocks[2].transactions[0].amount, 12.00)
 
-if __name__ == '__main__':
-    unittest.main()
